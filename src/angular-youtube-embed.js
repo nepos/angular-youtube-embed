@@ -1,5 +1,5 @@
 /* global YT */
-angular.module('youtube-embed', [])
+let youtubeEmbed = angular.module('youtube-embed', [])
 .service ('youtubeEmbedUtils', ['$window', '$rootScope', function ($window, $rootScope) {
     var Service = {}
 
@@ -250,3 +250,5 @@ angular.module('youtube-embed', [])
         }
     };
 }]);
+
+export default youtubeEmbed.name;
